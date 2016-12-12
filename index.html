@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://laurenpittenger.com/wp-content/themes/laurenpittenger/style.css?ver=1.0.0">
 
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
@@ -19,61 +20,154 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <header id="masthead" class="site-header" role="banner">
+  		<div class="wrap">
+  			<div class="site-branding">
+
+  					<h1>What the Flexbox?</h1>
+
+  			</div><!-- .site-branding -->
+  		</div><!-- .wrap -->
+  	</header>
+
   <div class="wrap">
       <div class="code">
-    <pre><code>.flex-container {
-  display: </code><select class="fc-display">
+        <h2>Flex Container Properties</h2>
+        <div class="flex-container-wrap">
+          <pre class="container-props">.flex-container {
+  display: <select class="fc-display">
   <option value="display-flex">flex</option>
   <option value="display-inline-flex">inline-flex</option>
-</select><code>;
-  flex-direction: </code><select class="fc-direction">
+</select>;
+  flex-direction: <select class="fc-direction">
   <option value="flex-direction-row">row</option>
   <option value="flex-direction-row-reverse">row-reverse</option>
   <option value="flex-direction-column">column</option>
   <option value="flex-direction-column-reverse">column-reverse</option>
-</select><code>;
-  justify-content: </code><select class="fc-justify-content">
+</select>;
+  justify-content: <select class="fc-justify-content">
   <option value="justify-content-flex-start">flex-start</option>
   <option value="justify-content-flex-end">flex-end</option>
   <option value="justify-content-center">center</option>
   <option value="justify-content-space-between">space-between</option>
   <option value="justify-content-space-around">space-around</option>
-</select><code>;
-  flex-wrap: </code><select class="fc-flex-wrap">
+</select>;
+  flex-wrap: <select class="fc-flex-wrap">
   <option value="flex-wrap-nowrap">nowrap</option>
   <option value="flex-wrap-wrap">wrap</option>
   <option value="flex-wrap-wrap-reverse">wrap-reverse</option>
-</select><code>;
-  align-items: </code><select class="fc-align-items">
+</select>;
+  align-items: <select class="fc-align-items">
   <option value="align-items-stretch">stretch</option>
   <option value="align-items-flex-start">flex-start</option>
   <option value="align-items-flex-end">flex-end</option>
   <option value="align-items-center">center</option>
   <option value="align-items-baseline">baseline</option>
-</select><code>;
-  align-content: </code><select class="fc-align-content">
+</select>;
+  align-content: <select class="fc-align-content">
   <option value="align-content-stretch">stretch</option>
   <option value="align-content-flex-start">flex-start</option>
   <option value="align-content-flex-end">flex-end</option>
   <option value="align-content-center">center</option>
   <option value="align-content-space-between">space-between</option>
   <option value="align-content-space-around">space-around</option>
-</select><code>;
-}
-.flex-item {}
-    </code></pre>
+</select>;
+}</pre></div>
+  <h2>Flex Item Properties</h2>
+  <div class="flex-item-wrap">
+  <pre>.flex-item {
+  align-self: </code><select class="fi-align-self">
+  <option value="align-self-auto">auto</option>
+  <option value="align-self-flex-start">flex-start</option>
+  <option value="align-self-flex-end">flex-end</option>
+  <option value="align-self-center">center</option>
+  <option value="align-self-baseline">baseline</option>
+  <option value="align-self-stretch">stretch</option>
+</select>;
+}</pre></div>
+<div class="flex-item-1-wrap">
+  <pre>.flex-item-1 {
+  align-self: <select class="fi-align-self-1">
+  <option value="align-self-auto">auto</option>
+  <option value="align-self-flex-start">flex-start</option>
+  <option value="align-self-flex-end">flex-end</option>
+  <option value="align-self-center">center</option>
+  <option value="align-self-baseline">baseline</option>
+  <option value="align-self-stretch">stretch</option></select>;
+  order: <select class="fi-order-1">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>;
+}</pre>
+</div>
+<div class="flex-item-2-wrap">
+  <pre>.flex-item-2 { order: <select class="fi-order-2">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>;}</pre>
+</div>
+<div class="flex-item-3-wrap">
+  <pre>.flex-item-3 { order: <select class="fi-order-3">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>;}</pre>
+</div>
+<div class="flex-item-4-wrap">
+  <pre>.flex-item-4 { order: <select class="fi-order-4">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>; }</pre>
+</div>
+<div class="flex-item-5-wrap">
+  <pre>.flex-item-5 { order: <select class="fi-order-5">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>; }</pre>
+</div>
+<div class="flex-item-6-wrap">
+  <pre>.flex-item-6 { order: <select class="fi-order-6">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option></select>; }</pre>
+</div>
   </div>
       <div class="left">
-        <div class="flex-container">
-          <div class="flex-item">1</div>
-          <div class="flex-item">2</div>
-          <div class="flex-item">3</div>
-          <div class="flex-item">4</div>
-          <div class="flex-item">5</div>
-          <div class="flex-item">6</div>
+        <div class="flex-container display-flex flex-direction-row justify-content-flex-start flex-wrap-nowrap align-items-stretch align-content-stretch">
+          <div class="flex-item flex-item-1">1</div>
+          <div class="flex-item flex-item-2">2</div>
+          <div class="flex-item flex-item-3">3</div>
+          <div class="flex-item flex-item-4">4</div>
+          <div class="flex-item flex-item-5">5</div>
+          <div class="flex-item flex-item-6">6</div>
         </div>
       </div>
     </div>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="wrap">
+			<div class="site-info">
+				© Copyright 2016 <a href="https://laurenpittenger.com">Lauren Pittenger</a>, all rights reserved.
+				Site by me, of course.
+			</div><!-- .site-info -->
+		</div>
+	</footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

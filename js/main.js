@@ -1,42 +1,4 @@
-// flex-container display
-
-/* $(".fc-display").change(function() {
-  var fcDisplay = $( ".fc-display option:selected" ).text();
-  $('.flex-container').css('display', fcDisplay);
-});
-
-// flex-container flex-direction
-$(".fc-direction").change(function() {
-  var fcDirection = $( ".fc-direction option:selected" ).text();
-  $('.flex-container').css('flex-direction', fcDirection);
-});
-
-// flex-container justify-content
-$(".fc-justify-content").change(function() {
-  var fcJustifyContent = $( ".fc-justify-content option:selected" ).text();
-  $('.flex-container').css('justify-content', fcJustifyContent);
-});
-
-// flex-container flex-wrap
-$(".fc-flex-wrap").change(function() {
-  var fcFlexWrap = $( ".fc-flex-wrap option:selected" ).text();
-  $('.flex-container').css('flex-wrap', fcFlexWrap);
-});
-
-// flex-container align-items
-$(".fc-align-items").change(function() {
-  var fcAlignItems = $( ".fc-align-items option:selected" ).text();
-  $('.flex-container').css('align-items', fcAlignItems);
-});
-
-// flex-container align-content
-$(".fc-align-content").change(function() {
-  var fcAlignContent = $( ".fc-align-content option:selected" ).text();
-  $('.flex-container').css('align-content', fcAlignContent);
-});
-*/
-
-$('select').change(function(){
+$('.flex-container-wrap select').change(function(){
   var selected = $( this ).find(":selected").val();
   var selectedParent = $( this ).className;
 
@@ -49,4 +11,70 @@ $('select').change(function(){
   // add the new class
   $( ".flex-container" ).addClass( selected );
 
+});
+
+$('.flex-item-wrap select').change(function(){
+  var selected = $( this ).find(":selected").val();
+  var selectedParent = $( this ).className;
+
+  // remove the classes associated with this particular property select
+  $( this ).find( " option" ).each(function(){
+    n = $( this ).val();
+    $( ".flex-item" ).removeClass( n );
+  });
+
+  // add the new class
+  $( ".flex-item" ).addClass( selected );
+
+});
+
+$('.fi-align-self-1').change(function(){
+  var selected = $( this ).find(":selected").val();
+  var selectedParent = $( this ).className;
+
+  // remove the classes associated with this particular property select
+  $( this ).find( " option" ).each(function(){
+    n = $( this ).val();
+    $( ".flex-item-1" ).removeClass( n );
+  });
+
+  // add the new class
+  $( ".flex-item-1" ).addClass( selected );
+
+});
+
+$('.fi-order-1').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-1" ).css( 'order', order );
+});
+
+$('.fi-order-2').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-2" ).css( 'order', order );
+});
+
+$('.fi-order-3').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-3" ).css( 'order', order );
+});
+
+$('.fi-order-4').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-4" ).css( 'order', order );
+});
+
+$('.fi-order-5').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-5" ).css( 'order', order );
+});
+
+$('.fi-order-6').change(function(){
+  var order = $( this ).find(":selected").val();
+  // change the order
+  $( ".flex-item-6" ).css( 'order', order );
 });
