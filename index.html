@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="wrap">
+      <div class="code">
+    <pre><code>.flex-container {
+  display: </code><select class="fc-display">
+  <option value="display-flex">flex</option>
+  <option value="display-inline-flex">inline-flex</option>
+</select><code>;
+  flex-direction: </code><select class="fc-direction">
+  <option value="flex-direction-row">row</option>
+  <option value="flex-direction-row-reverse">row-reverse</option>
+  <option value="flex-direction-column">column</option>
+  <option value="flex-direction-column-reverse">column-reverse</option>
+</select><code>;
+  justify-content: </code><select class="fc-justify-content">
+  <option value="justify-content-flex-start">flex-start</option>
+  <option value="justify-content-flex-end">flex-end</option>
+  <option value="justify-content-center">center</option>
+  <option value="justify-content-space-between">space-between</option>
+  <option value="justify-content-space-around">space-around</option>
+</select><code>;
+  flex-wrap: </code><select class="fc-flex-wrap">
+  <option value="flex-wrap-nowrap">nowrap</option>
+  <option value="flex-wrap-wrap">wrap</option>
+  <option value="flex-wrap-wrap-reverse">wrap-reverse</option>
+</select><code>;
+  align-items: </code><select class="fc-align-items">
+  <option value="align-items-stretch">stretch</option>
+  <option value="align-items-flex-start">flex-start</option>
+  <option value="align-items-flex-end">flex-end</option>
+  <option value="align-items-center">center</option>
+  <option value="align-items-baseline">baseline</option>
+</select><code>;
+  align-content: </code><select class="fc-align-content">
+  <option value="align-content-stretch">stretch</option>
+  <option value="align-content-flex-start">flex-start</option>
+  <option value="align-content-flex-end">flex-end</option>
+  <option value="align-content-center">center</option>
+  <option value="align-content-space-between">space-between</option>
+  <option value="align-content-space-around">space-around</option>
+</select><code>;
+}
+.flex-item {}
+    </code></pre>
+  </div>
+      <div class="left">
+        <div class="flex-container">
+          <div class="flex-item">1</div>
+          <div class="flex-item">2</div>
+          <div class="flex-item">3</div>
+          <div class="flex-item">4</div>
+          <div class="flex-item">5</div>
+          <div class="flex-item">6</div>
+        </div>
+      </div>
+    </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
